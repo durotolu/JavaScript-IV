@@ -18,6 +18,7 @@ class Student extends Person {
         this.previousBackground = previousBackground;
         this.className = className;
         this.favSubjects = favSubjects;
+        this.grade = 50;
     }
     listsSubject () {
         return this.favSubjects;
@@ -27,6 +28,11 @@ class Student extends Person {
     }
     sprintChallenge (subject) {
         return `${this.name} has begun sprint challenge on ${subject}`
+    }
+    graduate (newGrade) {
+        if (newGrade >= 70) {
+            true;
+        } else {return newGrade = Student.grade + Math.random();}
     }
 }
 
@@ -42,6 +48,9 @@ class Instructor extends Person {
     }
     grade(Student, subject) {
         return `${Student.name} receives a perfect score on ${subject}`
+    }
+    randomAddSubtract (Student) {
+        return newGrade = Student.grade + Math.random();
     }
 }
 
