@@ -10,13 +10,8 @@ Prototype Refactor
 
 
     //TASK 1
-function Person (name, age) {
-    this.name = name;
-    this.age = age;
-    this.stomach = [];
-  }
   
-class Person {
+class Human {
     constructor(name, age) {
         this.name = name;
         this.age = age;
@@ -58,11 +53,7 @@ class Person {
   
     //TASK 3
 
-  function Baby (name, age) {
-    Person.apply(this, [name, age]);
-  }
-
-class Baby extends Person {
+class Baby extends Human {
     play() {
         return `${this.name} plays too much`
     }
