@@ -46,7 +46,7 @@ class Instructor extends Person {
 }
 
 let gabe = new Instructor ('gabriel', 12, 'eu', 'redux', 'JS', 'serotonine')
-let dude = new Student ('gabriel', 12, 'eu', 'redux', 'JS', 'serotonine')
+let dude = new Student ('sam', 32, 'workstation', 'unilag', 'reactman', ['JS', 'chow no dey', 3, true])
 
 
 
@@ -65,3 +65,4 @@ class ProjectManagers extends Instructor {
 }
 
 let vebra = new ProjectManagers('justinas', 20, 'eur', 'html', 'python', 'gdmn', 'jclass', 'gabe')
+
